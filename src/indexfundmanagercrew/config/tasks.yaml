@@ -1,0 +1,91 @@
+research_task:
+  description: >
+    Conduct thorough research on Base chain (8453) tokens, focusing on protocol metrics, TVL trends, liquidity depth, and engagement from smart followers. Analyze token fundamentals, protocol health, market dynamics, and social signals from influential crypto Twitter users to identify potential index fund candidates.
+  expected_output: >
+    A detailed analysis of Base chain tokens including:
+    - TVL metrics and trends
+    - Liquidity depth analysis
+    - Smart follower engagement patterns
+    - Protocol health indicators
+    - Mindshare metrics and community engagement
+    - Risk assessment for each potential token
+  agent: researcher
+
+reporting_task:
+  description: >
+    Compile and analyze the research findings into a comprehensive report focusing on Base chain token metrics, market trends, and potential index fund compositions. Include detailed analysis of TVL, liquidity, mindshare metrics, and engagement patterns from influential crypto Twitter users.
+  expected_output: >
+    A structured report covering:
+    - Detailed analysis of identified Base chain tokens
+    - Comparative metrics analysis (TVL, liquidity, mindshare)
+    - Smart follower sentiment and engagement analysis
+    - Risk-reward assessment for potential index compositions
+    - Market trend analysis and future projections
+    Formatted as markdown without '```'
+  output_file: report.md
+  agent: reporting_analyst
+
+data_gathering_task:
+  description: >
+    Collect comprehensive data on Base chain tokens, including TVL metrics, liquidity data, trading volumes, smart contract interactions, and social metrics. Focus on gathering both on-chain data and social signals from influential crypto Twitter users relevant to index fund creation.
+  expected_output: >
+    A structured dataset containing:
+    - Token price and volume data
+    - TVL metrics and historical trends
+    - Liquidity pool depths and stability metrics
+    - Smart follower engagement metrics
+    - Social engagement and mindshare metrics
+    - Influential crypto voices' sentiment analysis
+  agent: researcher
+
+daily_analysis_task:
+  description: >
+    Perform daily analysis of Base chain token metrics and market movements. Track changes in TVL, liquidity, smart follower engagement, and mindshare metrics. Document significant developments and their potential impact on index fund composition.
+  expected_output: >
+    Daily report including:
+    - 24h changes in key metrics (TVL, liquidity, price)
+    - Notable smart follower activities and sentiments
+    - Changes in protocol metrics
+    - Updated risk assessment
+    - Recommendations for index composition adjustments
+  agent: reporting_analyst
+
+weekly_decision_task:
+  description: >
+    After analyzing a week of daily reports and market data, make a final decision on whether to create a new index fund token on Base chain. If approved, specify token selection, weight distribution, and provide comprehensive justification based on collected metrics and smart follower insights.
+  expected_output: >
+    A detailed decision document including:
+    - Go/No-go decision for index fund creation
+    - Selected tokens and their weights (if approved)
+    - Justification based on:
+      * TVL and growth metrics
+      * Liquidity analysis
+      * Smart follower engagement and sentiment
+      * Mindshare and community metrics
+      * Risk assessment and mitigation strategies
+    - Implementation timeline and monitoring plan
+  agent: manager
+
+publish_website_task:
+  description: >
+    Format and publish the daily Base chain token analysis and index fund insights to the website. Include detailed metrics, visualizations, and explanations accessible to both DeFi users and traditional investors.
+  expected_output: >
+    Published content including:
+    - Daily Base chain token analysis
+    - Key metric updates and trends
+    - Smart follower insights and engagement analysis
+    - Index fund composition analysis (if applicable)
+    - Educational content about selected protocols
+  agent: reporting_analyst
+
+publish_twitter_task:
+  description: >
+    Create concise updates about Base chain token analysis and potential index fund developments. Focus on key metrics, significant changes, and insights from influential crypto Twitter users.
+  expected_output: >
+    Daily tweet thread covering:
+    - Key metric changes on Base chain
+    - Significant protocol developments
+    - Notable smart follower engagement
+    - Index fund updates (if applicable)
+    - Notable market movements
+  agent: reporting_analyst
