@@ -1,0 +1,43 @@
+name: Sync Website Content
+
+on:
+  push:
+    paths:
+      - 'website-content/**'
+    branches:
+      - main
+
+jobs:
+  sync-content:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout source repository
+        uses: actions/checkout@v2
+        with:
+          path: source-repo
+
+      - name: Checkout website repository
+        uses: actions/checkout@v2
+        with:
+          repository: ${{ secrets.WEBSITE_REPO }}
+          token: ${{ secrets.WEBSITE_PAT }}
+          path: website-repo
+
+      - name: Sync content
+        run: |
+          # Copy new content
+          cp -r source-repo/website-content/daily/* website-repo/content/daily/
+          
+          # Setup git config
+          cd website-repo
+          git config user.name "GitHub Action"
+          git config user.email "action@github.com"
+          
+          # Commit and push if there are changes
+          git add .
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update daily discussions [skip ci]"
+            git push
+          fi 

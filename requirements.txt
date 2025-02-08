@@ -1,0 +1,2 @@
+twikit==0.1.0  # Twitter API client
+gitpython==3.1.42  # Git integration for website publishing 

@@ -25,7 +25,7 @@ def run():
     """
     inputs = {
         'topic': 'Index Funds and Cryptocurrency',
-        'current_year': str(datetime.now().year)
+        'current_day': str(datetime.now().day)
     }
     
     try:

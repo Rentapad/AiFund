@@ -8,7 +8,6 @@ from enum import Enum
 from dataclasses import dataclass, field
 from pathlib import Path
 
-config
 # Filter-related code
 class SortOrder(Enum):
     ASCENDING = "asc"

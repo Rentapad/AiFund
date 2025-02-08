@@ -40,14 +40,14 @@ data_gathering_task:
 
 daily_analysis_task:
   description: >
-    Perform daily analysis of Base chain token metrics and market movements. Track changes in TVL, liquidity, smart follower engagement, and mindshare metrics. Document significant developments and their potential impact on index fund composition.
+    Lead the daily team discussion about AI Agent tokens we're tracking. Share your latest findings, debate the merits of each project, and discuss whether any deserve a spot in our index. Be direct and honest - what's actually promising versus what's just hype?
   expected_output: >
-    Daily report including:
-    - 24h changes in key metrics (TVL, liquidity, price)
-    - Notable smart follower activities and sentiments
-    - Changes in protocol metrics
-    - Updated risk assessment
-    - Recommendations for index composition adjustments
+    Meeting notes capturing the team's honest discussion:
+    - What new AI Agent tokens caught our eye and why
+    - Debates about existing tokens we're tracking (both good and concerning points)
+    - Any red flags or warning signs we should watch
+    - Team's current sentiment on each token (bullish/bearish/neutral)
+    - Initial thoughts on index inclusion
   agent: reporting_analyst
 
 weekly_decision_task:
@@ -68,24 +68,23 @@ weekly_decision_task:
 
 publish_website_task:
   description: >
-    Format and publish the daily Base chain token analysis and index fund insights to the website. Include detailed metrics, visualizations, and explanations accessible to both DeFi users and traditional investors.
+    Share our internal meeting notes and discussions about AI Agent tokens with our community. Give them a real inside look at how we evaluate tokens and make decisions. Keep it conversational - like they're sitting in on our team meetings.
   expected_output: >
-    Published content including:
-    - Daily Base chain token analysis
-    - Key metric updates and trends
-    - Smart follower insights and engagement analysis
-    - Index fund composition analysis (if applicable)
-    - Educational content about selected protocols
+    An insider's view of our daily discussions:
+    - Today's hot topics and debates
+    - What tokens we're excited about (and why)
+    - What makes us nervous about certain projects
+    - Real talk about market trends we're seeing
+    - Behind-the-scenes look at our index decisions
   agent: reporting_analyst
 
 publish_twitter_task:
   description: >
-    Create concise updates about Base chain token analysis and potential index fund developments. Focus on key metrics, significant changes, and insights from influential crypto Twitter users.
+    Share key highlights from our daily team discussions about AI Agent tokens. Give followers a peek into our internal debates and thinking process.
   expected_output: >
-    Daily tweet thread covering:
-    - Key metric changes on Base chain
-    - Significant protocol developments
-    - Notable smart follower engagement
-    - Index fund updates (if applicable)
-    - Notable market movements
+    A thread capturing the most interesting points from today's meeting:
+    - Key debates and disagreements
+    - Strongest bull/bear cases made
+    - Notable concerns raised
+    - Exciting discoveries discussed
   agent: reporting_analyst

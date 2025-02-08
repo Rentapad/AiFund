@@ -212,8 +212,8 @@ if __name__ == "__main__":
     try:
         artifact = manager.save_contract_artifact(
             contract_name="MyToken",
-            abi=[],  # Your contract ABI here
-            bytecode="0x...",  # Your contract bytecode
+            abi=[],  
+            bytecode="0x...",  
             source_code="// SPDX-License-Identifier...",
             compiler_version="0.8.19",
             constructor_arguments=["TokenName", "TKN", 18],
